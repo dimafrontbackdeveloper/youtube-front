@@ -1,0 +1,16 @@
+.sidebar {
+	@apply py-5 px-7 xl:fixed xl:top-0 xl:left-0 xl:w-full xl:h-full xl:z-20 xl:bg-black xl:translate-y-full transition-transform xl:overflow-y-auto;
+
+	&Active {
+		@apply translate-y-0;
+	}
+
+	> .logo {
+		@apply text-xl font-semibold;
+		color: #fefefe;
+	}
+
+	.copy {
+		@apply text-gray-600 text-opacity-60 text-xs;
+	}
+}

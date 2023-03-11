@@ -1,0 +1,21 @@
+.burgerMenu {
+	@apply fixed bottom-7 right-7 hidden h-6 w-8 xl:block;
+
+	div {
+		@apply absolute left-0 w-full bg-amber-500 cursor-pointer;
+		height: 3px;
+
+		&:nth-child(1) {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:nth-child(3) {
+			bottom: 0;
+		}
+	}
+}

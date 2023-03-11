@@ -1,0 +1,30 @@
+.search_top {
+	@apply relative w-7/12 md:w-full md:mb-4;
+
+	> label {
+		@apply block relative;
+
+		input {
+			@apply rounded-lg py-2 px-4 w-full block outline-0 border-transparent text-white shadow bg-gray-800;
+			transition: box-shadow 0.4s ease;
+
+			&::placeholder {
+				color: #5c5a69;
+			}
+
+			&:focus {
+				@apply shadow-md;
+			}
+		}
+
+		img {
+			@apply absolute right-4 top-2.5 opacity-90;
+			max-width: 18px;
+		}
+	}
+}
+
+.result {
+	@apply shadow-block rounded-lg animate-scaleIn grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 absolute w-full gap-4 z-20 p-5 mt-3 bg-gray-900;
+	left: 0;
+}

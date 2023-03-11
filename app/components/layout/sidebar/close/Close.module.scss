@@ -1,0 +1,18 @@
+.close {
+	@apply absolute top-5 right-3 w-6 h-5 hidden 2xl:block;
+
+	div {
+		@apply w-full absolute bg-white;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 3px;
+
+		&:nth-child(1) {
+			@apply rotate-45;
+		}
+
+		&:nth-child(2) {
+			transform: rotate(-45deg);
+		}
+	}
+}

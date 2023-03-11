@@ -1,0 +1,39 @@
+.footer {
+	@apply absolute left-0 bottom-0 w-full p-5 flex justify-between items-center;
+
+	.status {
+		@apply flex items-center text-gray-400 text-base;
+
+		.upload-icon,
+		.check-icon {
+			@apply text-2xl mr-3;
+		}
+
+		.upload-icon {
+			@apply text-primary;
+			animation: blueAnimate 2s ease-in-out infinite;
+		}
+
+		&.icons-uploaded {
+			.upload-icon {
+				@apply animate-none hidden;
+			}
+
+			.check-icon {
+				@apply text-primary opacity-80;
+			}
+		}
+	}
+}
+
+@keyframes blueAnimate {
+	0% {
+		opacity: 30%;
+	}
+	50% {
+		opacity: 90%;
+	}
+	100% {
+		opacity: 30%;
+	}
+}

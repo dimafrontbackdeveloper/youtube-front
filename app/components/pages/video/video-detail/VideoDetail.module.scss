@@ -1,0 +1,71 @@
+.detail {
+	@apply flex space-x-6 items-center justify-between pb-10 2xl:flex-wrap;
+	grid-area: d;
+
+	> div:first-child {
+		@apply basis-2/3 2xl:basis-full 2xl:mb-16;
+	}
+
+	> div:last-child {
+		@apply basis-1/3 2xl:basis-full;
+	}
+
+	h1 {
+		@apply font-medium text-lg my-5 text-white;
+	}
+
+	.article {
+		@apply text-xs text-gray-500;
+	}
+
+	.wrapper_button {
+		@apply flex justify-between items-center mb-9 md:flex-wrap;
+
+		> button:first-child {
+			@apply md:mb-5;
+			width: 54%;
+
+			@media (max-width: 425px) {
+				width: 100%;
+			}
+		}
+
+		> button:last-child {
+			width: 40%;
+
+			@media (max-width: 425px) {
+				width: 100%;
+			}
+		}
+
+		> button {
+			@apply flex items-center justify-center rounded-lg p-2.5 text-white transition-colors duration-300;
+
+			&:hover {
+				@apply bg-opacity-100;
+			}
+
+			> svg {
+				@apply mr-2 text-base;
+			}
+
+			&.likeButton {
+				background-color: #353340;
+
+				&:hover {
+					@apply bg-gray-800;
+				}
+			}
+		}
+	}
+
+	.number_info {
+		> div {
+			@apply text-gray-500 flex items-center mb-4;
+
+			> svg {
+				@apply mr-2 text-base;
+			}
+		}
+	}
+}

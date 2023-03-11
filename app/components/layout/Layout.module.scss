@@ -1,0 +1,14 @@
+.main {
+	@apply grid;
+	grid-template-columns: 350px 1fr;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+	}
+
+	.content {
+		.wrapper {
+			@apply pl-6 pr-8;
+		}
+	}
+}

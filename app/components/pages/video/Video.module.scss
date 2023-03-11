@@ -1,0 +1,15 @@
+.layout {
+	@apply grid gap-8;
+	grid-template-columns: 1fr 400px;
+	grid-template-areas:
+		'vp c'
+		'd .';
+
+	@media (max-width: 1440px) {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'vp'
+			'd'
+			'c';
+	}
+}

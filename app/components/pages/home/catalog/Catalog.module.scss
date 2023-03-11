@@ -1,0 +1,13 @@
+.recommended {
+	> .top_block {
+		@apply flex items-center justify-between mb-6;
+
+		> .sort {
+			@apply text-white;
+		}
+	}
+
+	> .catalog {
+		@apply grid grid-cols-4 gap-6 2xl:grid-cols-2 lg:grid-cols-1;
+	}
+}
